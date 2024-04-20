@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>WDV205 Advanced CSS Final Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+
+    <link href="finalStyles.css" rel="stylesheet" type="text/css">
+    <!--<link href="finalStyles.scss" rel="stylesheet" type="text/css">-->
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="topHeader">
+            <p>-- Academic Website --</p>
+        </div>
+        <header>
+            <div>
+                <img src="images/Subtraction 1.png" height="100" width="100">
+            </div>
+            <div>
+                <p>Biggie B's Memorabilia</p>
+            </div>
+        </header>
+
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="finalProject.html" class="active">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="about.html">About Us</a>
+                        <a href="upcomingEvents.html">Upcoming Events</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+            </script>
+        </nav>
+
+
+        <div class="flex-container">
+                <div id="middle">
+                <section class="column">
+                        
+                        <img src="images/vonmiller.jpeg" height="350px" width="350">
+                
+                    <p>Welcome to Biggie B's Memorabilia! Biggie B's Memorabilia was established in 2015,
+                        as a dream job that was ultimately fulfilled by me, Brian (Biggie B).
+                        Over the years it has become one of the premier sports memorabilia shops in the Midwest,
+                        offering thousands items for purchase both in store and on eBay.
+                        Biggie B's also sports and celebrity autographed memorabilia from baseball bats and football
+                        helmets to photos and toys autographed by a long list of
+                        athletes and celebs. Every autograph has been certified by one of the top certification
+                        companies including Beckett, Fanatics, James Spence, and PSA/DNA.
+                        Biggie B's takes pride in bringing in different and unique items for sale, many of which are
+                        obtained from our private signings with the athletes and celebrities present.
+                    </p>
+                </section>
+
+                <main class="column">
+                    <p>Biggie B's is located in the great city of Austin, Texas. Right in the heart of the
+                        Rainey Street District, just a couple of turns off
+                        of Interstate 35 right off of Lady Bird Lake. We take pride in the fact that we are part of such
+                        an incredible atmosphere within the city of Austin. Not only can you stop in for
+                        a visit with us, but Austin offers live music all nights of the week, as well as great dine-in
+                        experiences. Make a drive to Austin and we're sure you
+                        will not be disappointed! *Hover over map to enlarge*</p>
+                    
+                        <img src="images/austin.jpg" class="austinMap" height="375px" width="350">
+                </main>
+            </div><!--end of id middle-->
+            
+            
+
+            <div class="row2">
+                <div>
+                    <img src="images/BUTKUSDICK16X20BEARSHOF29049-1-247x310.jpg" height="250">
+                </div>
+
+                <div>
+                    <img src="images/RYANNOLAN16X20BLOODY31259.jpg" height="250">
+                </div>
+
+                <div>
+                    <img src="images/STRAHANMICHAEL8X10OVERFAVREGIANTS25946-510x407.jpg" height="250">
+                </div>
+
+            </div>
+
+            <footer>
+                <div>
+                    <a href="https://www.facebook.com"><img src="images/facebook.png" height=50px width=50px
+                            alt="facebook"></a>
+                    <a href="https://www.instagram.com"><img src="images/instagram.png" height=50px width=50px
+                            alt="instagram"></a>
+                    <a href="https://twitter.com"><img src="images/twitter.png" height=50px width=50px
+                            alt="twitter"></a>
+                </div>
+
+                <div>
+                    <p>2004 River Street</p>
+                    <p>Austin, TX 73301</p>
+                    <p>512-333-1234</p>
+                    <p>biggiebmemorabilia@gmail.com</p>
+                </div>
+
+                <div>
+                    <img src="images/BB2.png" height="100" width="100">
+                </div>
+
+            </footer>
+
+        </div><!-- end of flex-container -->
+    </div>
+    <!--end of overall container-->
+</body>
+
+</html>

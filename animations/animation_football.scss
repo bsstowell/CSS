@@ -1,0 +1,125 @@
+/* Scss Document */
+@charset "utf-8";
+
+@mixin textChanges {
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    font-size: 40px;
+    margin-top: 25px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(100, 103, 104);
+}
+
+#container {
+    background-image: url("images/footballfield.svg.png");
+    width: 1200px;
+    height: 580px;
+    border: 2px solid black;
+    padding: 20px 15px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    @media (max-width: 800px) {
+          width: 100%;
+    }
+}
+
+h1 {
+    @include textChanges;
+}
+
+img[alt|="quarterback"] {
+    height: 225px;
+    width: 175px;
+    position: relative;
+    z-index: 2;
+    top: 215px;
+    left: 20px;
+    animation-name: quarterback;
+    animation-duration: 10s;
+}
+
+img[alt|="football"] {
+    height: 50px;
+    width: 75px;
+    position: relative;
+    z-index: 1;
+    animation-name: football;
+    animation-duration: 12s;
+    animation-delay: 2s;
+    top: 100px;
+
+}
+
+img[alt|="catching"] {
+    height: 220px;
+    width: 175px;
+    position: relative;
+    z-index: 1;
+    top: 215px;
+    left: 600px;
+    animation-duration: 14s;
+    animation-delay: 4s;
+    animation-name: catching;
+
+}
+
+img[alt|="dancing"] {
+    height: 350px;
+    width: 300px;
+    position: absolute;
+    z-index: 1;
+    top: -400px;
+    left: 500px;
+    animation: dancing 14s ease-out 9s;
+}
+
+@keyframes football {
+    0% {
+        transform: translateX(0) rotateY(0);
+    }
+
+    100% {
+        transform: translateX(800px) rotateX(360deg);
+    }
+}
+
+@keyframes quarterback {
+    0% {
+        transform: translateX(0) rotateY(0);
+    }
+
+    100% {
+        transform: translateX(100px);
+    }
+}
+
+@keyframes catching {
+    0% {
+        transform: translateX(0) rotateY(0);
+    }
+
+    100% {
+        transform: translateX(50px);
+    }
+}
+
+@keyframes dancing {
+    0% {
+        transform: rotateZ(15deg) rotateY(0deg) translateY(0);
+    }
+
+    100% {
+        transform: rotateZ(5deg) rotateY(360deg) translateY(550px);
+    }
+}
+

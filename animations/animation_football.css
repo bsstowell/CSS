@@ -1,0 +1,178 @@
+/* Scss Document */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #646768;
+}
+
+#container {
+  background-image: url("images/footballfield.svg.png");
+  width: 1200px;
+  height: 580px;
+  border: 2px solid black;
+  padding: 20px 15px;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  #container {
+    width: 100%;
+  }
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+  font-size: 40px;
+  margin-top: 25px;
+}
+
+img[alt|="quarterback"] {
+  height: 225px;
+  width: 175px;
+  position: relative;
+  z-index: 2;
+  top: 215px;
+  left: 20px;
+  -webkit-animation-name: quarterback;
+          animation-name: quarterback;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+img[alt|="football"] {
+  height: 50px;
+  width: 75px;
+  position: relative;
+  z-index: 1;
+  -webkit-animation-name: football;
+          animation-name: football;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  top: 100px;
+}
+
+img[alt|="catching"] {
+  height: 220px;
+  width: 175px;
+  position: relative;
+  z-index: 1;
+  top: 215px;
+  left: 600px;
+  -webkit-animation-duration: 14s;
+          animation-duration: 14s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-name: catching;
+          animation-name: catching;
+}
+
+img[alt|="dancing"] {
+  height: 350px;
+  width: 300px;
+  position: absolute;
+  z-index: 1;
+  top: -400px;
+  left: 500px;
+  -webkit-animation: dancing 14s ease-out 9s;
+          animation: dancing 14s ease-out 9s;
+}
+
+@-webkit-keyframes football {
+  0% {
+    -webkit-transform: translateX(0) rotateY(0);
+            transform: translateX(0) rotateY(0);
+  }
+  100% {
+    -webkit-transform: translateX(800px) rotateX(360deg);
+            transform: translateX(800px) rotateX(360deg);
+  }
+}
+
+@keyframes football {
+  0% {
+    -webkit-transform: translateX(0) rotateY(0);
+            transform: translateX(0) rotateY(0);
+  }
+  100% {
+    -webkit-transform: translateX(800px) rotateX(360deg);
+            transform: translateX(800px) rotateX(360deg);
+  }
+}
+
+@-webkit-keyframes quarterback {
+  0% {
+    -webkit-transform: translateX(0) rotateY(0);
+            transform: translateX(0) rotateY(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+
+@keyframes quarterback {
+  0% {
+    -webkit-transform: translateX(0) rotateY(0);
+            transform: translateX(0) rotateY(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+
+@-webkit-keyframes catching {
+  0% {
+    -webkit-transform: translateX(0) rotateY(0);
+            transform: translateX(0) rotateY(0);
+  }
+  100% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+}
+
+@keyframes catching {
+  0% {
+    -webkit-transform: translateX(0) rotateY(0);
+            transform: translateX(0) rotateY(0);
+  }
+  100% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+}
+
+@-webkit-keyframes dancing {
+  0% {
+    -webkit-transform: rotateZ(15deg) rotateY(0deg) translateY(0);
+            transform: rotateZ(15deg) rotateY(0deg) translateY(0);
+  }
+  100% {
+    -webkit-transform: rotateZ(5deg) rotateY(360deg) translateY(550px);
+            transform: rotateZ(5deg) rotateY(360deg) translateY(550px);
+  }
+}
+
+@keyframes dancing {
+  0% {
+    -webkit-transform: rotateZ(15deg) rotateY(0deg) translateY(0);
+            transform: rotateZ(15deg) rotateY(0deg) translateY(0);
+  }
+  100% {
+    -webkit-transform: rotateZ(5deg) rotateY(360deg) translateY(550px);
+            transform: rotateZ(5deg) rotateY(360deg) translateY(550px);
+  }
+}
+/*# sourceMappingURL=animation_football.css.map */

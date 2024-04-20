@@ -1,0 +1,79 @@
+/* Scss Document */
+.popup {
+  position: absolute;
+  top: 200px;
+  left: 40%;
+  z-index: 1;
+  -webkit-animation-name: spin, float;
+          animation-name: spin, float;
+  -webkit-animation-duration: 3s, 8s;
+          animation-duration: 3s, 8s;
+  -webkit-animation-direction: normal, normal;
+          animation-direction: normal, normal;
+  -webkit-animation-delay: 0s, 7s;
+          animation-delay: 0s, 7s;
+  -webkit-animation-timing-function: ease-in, linear;
+          animation-timing-function: ease-in, linear;
+  -webkit-animation-fill-mode: forwards, forwards;
+          animation-fill-mode: forwards, forwards;
+}
+
+.popupimage {
+  width: 100%;
+  margin: 0 auto;
+  border: hidden;
+  padding: 0;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: scale(0) rotateZ(0deg);
+            transform: scale(0) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: scale(1.5) rotateZ(360deg);
+            transform: scale(1.5) rotateZ(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: scale(0) rotateZ(0deg);
+            transform: scale(0) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: scale(1.5) rotateZ(360deg);
+            transform: scale(1.5) rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+  }
+  20% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+  }
+  100% {
+    -webkit-transform: translateY(225px) translateX(990px) scale(1.5);
+            transform: translateY(225px) translateX(990px) scale(1.5);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+  }
+  20% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+  }
+  100% {
+    -webkit-transform: translateY(225px) translateX(990px) scale(1.5);
+            transform: translateY(225px) translateX(990px) scale(1.5);
+  }
+}
+/*# sourceMappingURL=bannerAnimation.css.map */

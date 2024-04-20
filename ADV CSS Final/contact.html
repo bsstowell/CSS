@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>WDV205 Advanced CSS Final Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+
+    <link href="finalStyles.css" rel="stylesheet" type="text/css">
+   <!--<link href="finalStyles.scss" rel="stylesheet" type="text/css">-->
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="topHeader">
+            <p>-- Academic Website --</p>
+        </div>
+        <header>
+            <div>
+                <img src="images/Subtraction 1.png" height="100" width="100">
+            </div>
+            <div>
+                <p>Biggie B's Memorabilia</p>
+            </div>
+        </header>
+
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="finalProject.html" class="active">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="about.html">About Us</a>
+                        <a href="upcomingEvents.html">Upcoming Events</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+            </script>
+        </nav>
+
+
+        <div class="flex-container">
+            <div class="row1">
+
+                <div>
+                    <figure class="clearFix figure1">
+                        <img src="images/SANDERSDEIONMINIAMPFSU27425-510x428.jpg" height="200" width="200">
+                        <figcaption>Deion Sanders</figcaption>
+                    </figure>
+                </div>
+
+                <div>
+                    <form>
+                        <h2>CONTACT US</h2>
+                        <p>
+                            <label for="Name" class="formatLabel">Name</label>
+                            <input type="text" name="Name" id="Name">
+                        </p>
+                        <p>
+                            <label for="Email" class="formatLabel">Email</label>
+                            <input type="text" name="Email" id="Email">
+                        </p>
+                        <p>
+                            <label for="contact" class="formatLabel">Reason</label>
+                            <select id="contact" name="contact">
+                                <option value="general">General Inquiry</option>
+                                <option value="ebay">eBay Question</option>
+                                <option value="upcoming">Upcoming Signing</option>
+                                <option value="item">Specific Item Search</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="Message" class="formatLabel">Message</label>
+                            <textarea name="Message" id="message" rows="4" cols="42"></textarea>
+                        </p>
+                        <p>
+                            <input type="submit" name="button" id="button" value="Submit" class="button">
+                            <input type="reset" name="button2" id="button2" value="Reset" class="button">
+                        </p>
+                    </form>
+                </div>
+
+                <div>
+                    <figure class="clearFix figure1">
+                        <img src="images/image-945.jpeg" height="200" width="200">
+                        <figcaption>Kurt Warner</figcaption>
+                    </figure>
+                </div>
+
+
+            </div>
+
+            <footer>
+                <div>
+                    <a href="https://www.facebook.com"><img src="images/facebook.png" height=50px width=50px
+                            alt="facebook"></a>
+                    <a href="https://www.instagram.com"><img src="images/instagram.png" height=50px width=50px
+                            alt="instagram"></a>
+                    <a href="https://twitter.com"><img src="images/twitter.png" height=50px width=50px
+                            alt="twitter"></a>
+                </div>
+
+                <div>
+                    <p>2004 River Street</p>
+                    <p>Austin, TX 73301</p>
+                    <p>512-333-1234</p>
+                    <p>biggiebmemorabilia@gmail.com</p>
+                </div>
+
+                <div>
+                    <img src="images/BB2.png" height="100" width="100">
+                </div>
+
+            </footer>
+
+        </div><!-- end of flex-container -->
+    </div>
+    <!--end of overall container-->
+</body>
+
+</html>

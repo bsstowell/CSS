@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>WDV205 Advanced CSS Final Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+
+    <link href="finalStyles.css" rel="stylesheet" type="text/css">
+    <!--<link href="finalStyles.scss" rel="stylesheet" type="text/css">-->
+</head>
+
+<body>
+
+    <div class="popup"><img src="images/kittle.jpg" class="popupImage"></div>
+
+    <div id="container">
+        <div class="topHeader">
+            <p>-- Academic Website --</p>
+        </div>
+        <header>
+            <div>
+                <img src="images/Subtraction 1.png" height="100" width="100">
+            </div>
+            <div>
+                <p>Biggie B's Memorabilia</p>
+            </div>
+        </header>
+
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="finalProject.html" class="active">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="about.html">About Us</a>
+                        <a href="upcomingEvents.html">Upcoming Events</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+            </script>
+        </nav>
+
+
+        <div class="flex-container">
+            <div class="row1">
+                <div>
+                    <img src="images/usaHockey.jpg" class="miracle" height="200" width="200">
+                </div>
+
+                <div>
+                    <div class="purpleBubble">
+                        1980 US Olympic Hockey Team Signed Jersey!
+                        <br>
+                        "Miracle On Ice"
+                    </div>
+                </div>
+
+                <div>
+                    <button class="button"><a href="https://www.ebay.com" target="_blank">Shop Now!</a></button>
+                </div>
+            </div>
+
+            <div class="row2">
+                <div>
+                    <figure class="clearFix figure1">
+                        <img src="images/image-48.jpeg" height="200" width="200">
+                        <figcaption>Larry Bird - Celtics</figcaption>
+                    </figure>
+                </div>
+
+                <div>
+                    <figure class="clearFix figure2">
+                        <img src="images/rose.jpg" height="200" width="200">
+                        <figcaption>Pete Rose - Reds</figcaption>
+                    </figure>
+                </div>
+
+                <div>
+                    <figure class="clearFix figure3">
+                        <img src="images/biles.jpg" height="200" width="200">
+                        <figcaption>Simone Biles - USA</figcaption>
+                    </figure>
+                </div>
+                
+                    <div>
+                        <figure class="clearFix figure4">
+                            <img src="images/image-457.jpeg" height="200" width="200">
+                            <figcaption>Randy Moss - Vikings<figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="row3">
+                    <div>
+                        <p>UPCOMING SIGNING ANNOUNCEMENT!</p>
+                        <p>OCTOBER 29TH, 2022</p>
+                    </div>
+
+                    <div>
+                        <img src="images/peyton.jpg" class="peyton" height="150" width="150">
+                    </div>
+
+                    <div>
+                        "THE SHERIFF" - PEYTON MANNING
+                        <button class="button"><a href="upcomingEvents.html" target="_blank">More Info!</a></button>
+                    </div>
+
+                </div>
+
+
+
+                <footer>
+                    <div>
+                        <a href="https://www.facebook.com"><img src="images/facebook.png" height= 50px width= 50px alt="facebook"></a>
+                        <a href="https://www.instagram.com"><img src="images/instagram.png" height= 50px width= 50px alt="instagram"></a>
+                        <a href="https://twitter.com"><img src="images/twitter.png" height= 50px width= 50px alt="twitter"></a>
+                    </div>
+
+                    <div>
+                        <p>2004 River Street</p>
+                        <p>Austin, TX 73301</p>
+                        <p>512-333-1234</p>
+                        <p>biggiebmemorabilia@gmail.com</p>
+                    </div>
+
+                    <div>
+                        <img src="images/BB2.png" height="100" width="100">
+                    </div>
+
+                </footer>
+
+            </div><!-- end of flex-container -->
+        </div>
+        <!--end of overall container-->
+</body>
+
+</html>

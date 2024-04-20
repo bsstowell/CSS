@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>WDV205 Advanced CSS Final Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+
+    <link href="finalStyles.css" rel="stylesheet" type="text/css">
+    <!--<link href="finalStyles.scss" rel="stylesheet" type="text/css">-->
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="topHeader">
+            <p>-- Academic Website --</p>
+        </div>
+        <header>
+            <div>
+                <img src="images/Subtraction 1.png" height="100" width="100">
+            </div>
+            <div>
+                <p>Biggie B's Memorabilia</p>
+            </div>
+        </header>
+
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="finalProject.html" class="active">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="about.html">About Us</a>
+                        <a href="upcomingEvents.html">Upcoming Events</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+            </script>
+        </nav>
+
+
+        <div class="flex-container">
+            <div id="middle">
+                <section class="column">
+                    <p>Peyton Manning will be at Biggie B's October 29th at 1pm. This is a public signing on a first
+                        come -
+                        first serve basis.
+                        Mr. Manning has confirmed he will sign items for 3 hours only, so get here early! The following
+                        list
+                        includes items
+                        that Peyton will sign and the cost per item. Omaha!</p>
+                    <ul><br>
+                        <li>Flat Items: $100</li>
+                        <li>Mini Helmet: $150</li>
+                        <li>Full Size Helmet: $200</li>
+                        <li>Inscriptions: $100</li>
+                        <li>Football: $150</li>
+                        <li>Jersey: $175</li>
+                    </ul>
+                </section>
+
+                <main class="column">
+                    <div>
+                        <img src="images/peytonTrophy.jpeg" style="align-items: center" height="250px">
+                    </div>
+                <main>
+            </div>
+            <!--end of id middle-->
+
+            <div class="row3">
+
+                <p style="text-decoration:underline;">Upcoming Events</p>
+
+
+                <ul class="column">
+                    <p>2022</p><br>
+                    <li>Alex Morgan - November 13th</li><br>
+                    <li>JJ Watt - November 30th</li><br>
+                    <li>Mike Trout - December 20th</li><br>
+                </ul>
+
+                <ul class="column">
+                    <p>2023</p><br>
+                    <li>Charles Barkley - January 7th</li><br>
+                    <li>Mike Tyson - February 13th</li><br>
+                    <li>Ronda Rousey - March 1st</li><br>
+                </ul>
+
+            </div>
+
+            <div class="row3">
+                <p>All events will take place at Biggie B's Memorabilia unless otherwise noted.
+                    Times are yet to be determined. Please check back for announcements and updates as the set dates get
+                    closer. We are
+                    very excited to host each of these great athletes in our store!
+                </p>
+            </div>
+
+            <div class="row2">
+                <div>
+                    <img src="images/HULLBOBBYTICKET.jpg" height="200px">
+                </div>
+
+                <div>
+                    <img src="images/boxing.jpg" height="200px">
+                </div>
+
+                <div>
+                    <img src="images/dorsett.jpg" height="200px">
+                </div>
+
+            </div>
+
+
+
+            <footer>
+                <div>
+                    <a href="https://www.facebook.com"><img src="images/facebook.png" height=50px width=50px
+                            alt="facebook"></a>
+                    <a href="https://www.instagram.com"><img src="images/instagram.png" height=50px width=50px
+                            alt="instagram"></a>
+                    <a href="https://twitter.com"><img src="images/twitter.png" height=50px width=50px
+                            alt="twitter"></a>
+                </div>
+
+                <div>
+                    <p>2004 River Street</p>
+                    <p>Austin, TX 73301</p>
+                    <p>512-333-1234</p>
+                    <p>biggiebmemorabilia@gmail.com</p>
+                </div>
+
+                <div>
+                    <img src="images/BB2.png" height="100" width="100">
+                </div>
+
+            </footer>
+
+        </div><!-- end of flex-container -->
+    </div>
+    <!--end of overall container-->
+</body>
+
+</html>
